@@ -1,4 +1,4 @@
-package main
+package day3
 
 import (
 	"io"
@@ -7,11 +7,7 @@ import (
 	"strconv"
 )
 
-func main() {
-	if len(os.Args) < 2 {
-		log.Fatal("Provide input")
-	}
-	filename := os.Args[1]
+func Run(filename string) {
 	input, err := getFileContent(filename)
 	if err != nil {
 		log.Fatal(err)

@@ -1,8 +1,7 @@
-package main
+package day4
 
 import (
 	"bufio"
-	"errors"
 	"log"
 	"os"
 )
@@ -75,8 +74,8 @@ func (d Data) Get(p Point) string {
 	return v
 }
 
-func main() {
-	file, err := getFile()
+func Run(filename string) {
+	file, err := os.Open(filename)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -137,12 +136,4 @@ func partTwo(data *Data) int {
 		}
 	}
 	return count
-}
-
-func getFile() (*os.File, error) {
-	if len(os.Args) < 2 {
-		return nil, errors.New("not enough arguments")
-	}
-	filename := os.Args[1]
-	return os.Open(filename)
 }

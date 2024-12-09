@@ -1,4 +1,4 @@
-package main
+package day5
 
 import (
 	"bufio"
@@ -80,8 +80,7 @@ func (ins Instructions) indexOf(val int) int {
 	return -1
 }
 
-func main() {
-	filename := os.Args[1]
+func Run(filename string) {
 	file, err := os.Open(filename)
 	if err != nil {
 		log.Fatal(err)

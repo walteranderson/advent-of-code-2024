@@ -1,4 +1,4 @@
-package main
+package day1
 
 import (
 	"bufio"
@@ -9,11 +9,7 @@ import (
 	"strings"
 )
 
-func main() {
-	if len(os.Args) < 2 {
-		log.Fatal("Provide input")
-	}
-	filename := os.Args[1]
+func Run(filename string) {
 	file, err := os.Open(filename)
 	if err != nil {
 		log.Fatal(err)
