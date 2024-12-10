@@ -9,6 +9,7 @@ import (
 	day6 "aoc/day-6"
 	day7 "aoc/day-7"
 	day8 "aoc/day-8"
+	day9 "aoc/day-9"
 	"fmt"
 	"log"
 	"os"
@@ -49,6 +50,8 @@ func run(day int, filename string) {
 		day7.Run(filename)
 	case 8:
 		day8.Run(filename)
+	case 9:
+		day9.Run(filename)
 	}
 }
 
