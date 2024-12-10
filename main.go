@@ -2,6 +2,7 @@ package main
 
 import (
 	day1 "aoc/day-1"
+	day10 "aoc/day-10"
 	day2 "aoc/day-2"
 	day3 "aoc/day-3"
 	day4 "aoc/day-4"
@@ -52,6 +53,8 @@ func run(day int, filename string) {
 		day8.Run(filename)
 	case 9:
 		day9.Run(filename)
+	case 10:
+		day10.Run(filename)
 	}
 }
 
