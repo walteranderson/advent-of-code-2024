@@ -183,7 +183,7 @@ func (d *DiskMap) String() string {
 	} else {
 		out.WriteString(d.input)
 	}
-	out.WriteString("  Files    -> ")
+	out.WriteString("\n  Files    -> ")
 	if len(d.Files) > 100 {
 		out.WriteString("REDACTED - TOO BIG")
 	} else {
